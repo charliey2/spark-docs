@@ -12,6 +12,8 @@ theme:
   features:
     - navigation.instant
     - navigation.instant.progress
+    - content.tooltips
+    - content.code.copy
 
 markdown_extensions:
   - admonition
@@ -21,6 +23,8 @@ markdown_extensions:
   - md_in_html
   - abbr
   - pymdownx.snippets
+  - pymdownx.caret
+  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
 

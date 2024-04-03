@@ -12,12 +12,6 @@ The `SourceIndex` class contains methods for accessing modules and packages from
 
 Used to get a module from the given `moduleName`. Returns a `ModuleSource` if found, otherwise it will throw an error.
 
-Deprecated
-{ .flag-deprecated }
-
-Test
-{.flag-test }
-
 | Argument | Type | Required |
 | :---: | :---: | :---: |
 | moduleName | string | ✔︎ |
@@ -45,6 +39,8 @@ Test
 
     return MyModule
     ```
+
+</br>
 
 ### GetPackage <small>any?</small> { #GetPackage data-toc-label="GetPackage" }
 
