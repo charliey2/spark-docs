@@ -1,0 +1,25 @@
+site_name: My Docs
+site_url: https://example.com
+
+theme:
+  name: material
+  
+  palette:
+    primary: deep purple
+    accent: blue
+    scheme: slate
+  
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
