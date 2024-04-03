@@ -1,0 +1,16 @@
+.flag-deprecated {
+    color: #ffffff;
+    line-height: .8rem;
+    padding: 5px;
+    margin-left: 7px !important;
+    margin: 0 !important; 
+    background-clip: padding-box;
+    display: inline-block;
+    font-size: .7rem;
+    font-family: "Roboto";
+    font-weight: normal;
+    border-color: red;
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 20%;
+}

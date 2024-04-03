@@ -2,6 +2,8 @@
 
 ## Overview
 
+The `SourceIndex` class contains methods for accessing modules and packages from source directories.
+
 ***
 
 ## Methods
@@ -9,6 +11,9 @@
 ### GetModule <small>any?</small> { #GetModule data-toc-label="GetModule" }
 
 Used to get a module from the given `moduleName`. Returns a `ModuleSource` if found, otherwise it will throw an error.
+
+some text here
+{ .flag-deprecated }
 
 | Argument | Type | Required |
 | :---: | :---: | :---: |
@@ -23,6 +28,7 @@ Used to get a module from the given `moduleName`. Returns a `ModuleSource` if fo
     local MyModule = SharedSourceIndex:GetModule("MyModule")
 
     print(MyModule.foo())
+    --> "Hello World!"
     ```
 
 === "MyModule"
@@ -54,6 +60,7 @@ Used to get a package from the given `packageName`. Returns a `ModuleSource` if 
     local MyPackage = SharedSourceIndex:GetPackage("MyPackage")
 
     print(MyModule.foo())
+    --> "Hello World!"
     ```
 
 === "MyPackage"
