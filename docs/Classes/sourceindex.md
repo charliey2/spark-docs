@@ -12,8 +12,11 @@ The `SourceIndex` class contains methods for accessing modules and packages from
 
 Used to get a module from the given `moduleName`. Returns a `ModuleSource` if found, otherwise it will throw an error.
 
-some text here
+Deprecated
 { .flag-deprecated }
+
+Test
+{.flag-test }
 
 | Argument | Type | Required |
 | :---: | :---: | :---: |
