@@ -22,7 +22,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - abbr
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.caret
   - pymdownx.tilde
   - pymdownx.tabbed:
@@ -30,3 +32,6 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+watch:
+  - includes

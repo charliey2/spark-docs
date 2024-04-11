@@ -25,6 +25,7 @@
     background-color: rgba(177, 177, 177, 0.2);
 }
 
+
 .flag.deprecated {
     color: rgb(167, 33, 33) !important;
     background-color: rgba(255, 0, 0, 0.115);
@@ -32,4 +33,23 @@
 
 .flag.deprecated:hover {
     background-color: rgba(255, 0, 0, 0.2);
+}
+
+
+.flag.client {
+    color: rgb(33, 167, 46) !important;
+    background-color: rgba(33, 167, 46, 0.115);
+}
+
+.flag.client:hover {
+    background-color: rgba(33, 167, 46, 0.2);
+}
+
+.flag.server {
+    color: rgb(33, 120, 167) !important;
+    background-color: rgba(33, 120, 167, 0.115);
+}
+
+.flag.server:hover {
+    background-color: rgba(33, 120, 167, 0.2);
 }

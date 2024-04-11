@@ -50,6 +50,9 @@ Used to get a package from the given `packageName`. Returns a `ModuleSource` if 
 | :---: | :---: | :---: |
 | packageName | string | ✔︎ |
 
+!!! warning
+    Only the server context and shared context have packages. Attempting to access `GetPackage` on a client `GetContextSourceIndex` SourceIndex will throw an error.
+
 === "Script"
 
     ```lua

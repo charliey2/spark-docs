@@ -13,11 +13,10 @@ The `Source` service provides easy access to both shared and context-locked (ser
 Gets the source index for the current script context. Respects context-locked source files, eg. Server context scripts can only access server source files. Returns a [SourceIndex].
 
 ```lua
-local irisCORE = shared.Core
-local Source = irisCORE:GetService("Source")
+local Source = shared:GetService("Source")
 
 local ContextSourceIndex: SourceIndex = Source:GetContextSourceIndex()
-local MyCoolPackage = ContextSourceIndex:GetPackage("MyCoolPackage")
+local MyCoolModule = ContextSourceIndex:GetPackage("MyCoolModule")
 ```
 
 ### GetSharedSourceIndex <small>[SourceIndex]</small> { #GetSharedSourceIndex data-toc-label="GetSharedSourceIndex" }
@@ -25,8 +24,7 @@ local MyCoolPackage = ContextSourceIndex:GetPackage("MyCoolPackage")
 Gets the shared source index. Shared source files are always accessible by both the client and the server. Returns a [SourceIndex].
 
 ```lua
-local irisCORE = shared.Core
-local Source = irisCORE:GetService("Source")
+local Source = shared:GetService("Source")
 
 local SharedSourceIndex: SourceIndex = Source:GetSharedSourceIndex()
 local MyCoolPackage = SharedSourceIndex:GetPackage("MyCoolPackage")
