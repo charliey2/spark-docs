@@ -50,8 +50,21 @@ Used to get a package from the given `packageName`. Returns a `ModuleSource` if 
 | :---: | :---: | :---: |
 | packageName | string | ✔︎ |
 
-!!! warning
+??? warning "Package Context Warning"
     Only the server context and shared context have packages. Attempting to access `GetPackage` on a client `GetContextSourceIndex` SourceIndex will throw an error.
+
+    ```lua
+    --// Client Context Script
+    local Source = shared:GetService("Source")
+    local ContextSourceIndex: SourceIndex = Source:GetContextSourceIndex()
+    local SharedSourceIndex: SourceIndex = Source:GetSharedSourceIndex()
+
+    --> this line will error
+    local SuperCoolPackage = ContextSourceIndex:GetPackage("SuperCoolPackage")
+
+    --> this line will not error
+    local SuperCoolPackage = SharedSourceIndex:GetPackage("SuperCoolPackage")
+    ```
 
 === "Script"
 

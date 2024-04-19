@@ -10,7 +10,10 @@ The `ClientGui` service provides client side access to `GuiBase` objects. It als
 
 ### GetInterface <small>GuiBase?</small> { #GetInterface data-toc-label="GetInterface" }
 Client Only
-{ .flag .client }
+{ .flag .plain }
+
+Can Yield
+{ .flag .plain }
 
 Prints a message if the conditional is true. If `shouldYield` is `true`, the script will yield until the interface object is created. If `shouldYield` is `false`, the script will look for an already loaded interface object with the given `interfaceName` and return it if found, otherwise the script will attempt to load and return a new interface object from a template with the same `interfaceName`. If no object can be loaded, `nil` is returned.
 
@@ -44,13 +47,14 @@ Prints a message if the conditional is true. If `shouldYield` is `true`, the scr
         ```lua
         local ClientGui = shared:GetService("ClientGui")
 
-        -- Loads the object and returns it, also returns the object to all yielding methods
+        -- Loads the object and returns it, also returns the object
+        -- to all yielding methods
         local mainMenuGui = ClientGui:GetInterface("MainMenu")
         ```
 
 ### SetCoreGuiEnabled <small>void</small> { #SetCoreGuiEnabled data-toc-label="SetCoreGuiEnabled" }
 Client Only
-{ .flag .client }
+{ .flag .plain }
 
 | Argument | Type | Required |
 | :---: | :---: | :---: |
@@ -59,8 +63,14 @@ Client Only
 
 ### GetCoreGuiEnabled <small>boolean</small> { #GetCoreGuiEnabled data-toc-label="GetCoreGuiEnabled" }
 Client Only
-{ .flag .client }
+{ .flag .plain }
 
 | Argument | Type | Required |
 | :---: | :---: | :---: |
 | coreGuiType | `Enum.CoreGuiType` | ✔︎ |
+
+### LoadService <small>void</small> { #LoadService data-toc-label="LoadService" }
+Server Only
+{ .flag .plain }
+
+Must be called on the server to permit GUIs to load on clients.

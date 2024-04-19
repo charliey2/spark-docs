@@ -1,2 +1,3 @@
 *[Client Only]: This member can only be accessed on the client, attempting to access it on the server will error
 *[Server Only]: This member can only be accessed on the server, attempting to access it on the client will error
+*[Can Yield]: This member can yield the current thread
