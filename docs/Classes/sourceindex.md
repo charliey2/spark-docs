@@ -8,7 +8,7 @@ The `SourceIndex` class contains methods for accessing modules and packages from
 
 ## Methods
 
-### GetModule <small>any?</small> { #GetModule data-toc-label="GetModule" }
+### GetModule <small><any?\></small> { #GetModule data-toc-label="GetModule" }
 
 Used to get a module from the given `moduleName`. Returns a `ModuleSource` if found, otherwise it will throw an error.
 
@@ -19,7 +19,7 @@ Used to get a module from the given `moduleName`. Returns a `ModuleSource` if fo
 === "Script"
 
     ```lua
-    local Source = shared.Core:GetService("Source")
+    local Source = shared:GetService("Source")
     local SharedSourceIndex: SourceIndex = Source:GetSharedSourceIndex()
 
     local MyModule = SharedSourceIndex:GetModule("MyModule")
@@ -42,7 +42,7 @@ Used to get a module from the given `moduleName`. Returns a `ModuleSource` if fo
 
 </br>
 
-### GetPackage <small>any?</small> { #GetPackage data-toc-label="GetPackage" }
+### GetPackage <small><any?\></small> { #GetPackage data-toc-label="GetPackage" }
 
 Used to get a package from the given `packageName`. Returns a `ModuleSource` if found, otherwise it will throw an error.
 
@@ -69,7 +69,7 @@ Used to get a package from the given `packageName`. Returns a `ModuleSource` if 
 === "Script"
 
     ```lua
-    local Source = shared.Core:GetService("Source")
+    local Source = shared:GetService("Source")
     local SharedSourceIndex: SourceIndex = Source:GetSharedSourceIndex()
 
     local MyPackage = SharedSourceIndex:GetPackage("MyPackage")

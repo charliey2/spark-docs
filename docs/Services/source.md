@@ -8,7 +8,7 @@ The `Source` service provides easy access to both shared and context-locked (ser
 
 ## Methods
 
-### GetContextSourceIndex <small>[SourceIndex]</small> { #GetContextSourceIndex data-toc-label="GetContextSourceIndex" }
+### GetContextSourceIndex <small><[SourceIndex]\></small> { #GetContextSourceIndex data-toc-label="GetContextSourceIndex" }
 
 Gets the source index for the current script context. Respects context-locked source files, eg. Server context scripts can only access server source files. Returns a [SourceIndex].
 
@@ -19,7 +19,7 @@ local ContextSourceIndex: SourceIndex = Source:GetContextSourceIndex()
 local MyCoolModule = ContextSourceIndex:GetPackage("MyCoolModule")
 ```
 
-### GetSharedSourceIndex <small>[SourceIndex]</small> { #GetSharedSourceIndex data-toc-label="GetSharedSourceIndex" }
+### GetSharedSourceIndex <small><[SourceIndex]\></small> { #GetSharedSourceIndex data-toc-label="GetSharedSourceIndex" }
 
 Gets the shared source index. Shared source files are always accessible by both the client and the server. Returns a [SourceIndex].
 

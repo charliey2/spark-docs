@@ -8,7 +8,7 @@ The `ClientGui` service provides client side access to `GuiBase` objects. It als
 
 ## Methods
 
-### GetInterface <small>GuiBase?</small> { #GetInterface data-toc-label="GetInterface" }
+### GetInterface <small><GuiBase?\></small> { #GetInterface data-toc-label="GetInterface" }
 Client Only
 { .flag .plain }
 
@@ -52,7 +52,7 @@ Prints a message if the conditional is true. If `shouldYield` is `true`, the scr
         local mainMenuGui = ClientGui:GetInterface("MainMenu")
         ```
 
-### SetCoreGuiEnabled <small>void</small> { #SetCoreGuiEnabled data-toc-label="SetCoreGuiEnabled" }
+### SetCoreGuiEnabled <small><void\></small> { #SetCoreGuiEnabled data-toc-label="SetCoreGuiEnabled" }
 Client Only
 { .flag .plain }
 
@@ -61,7 +61,7 @@ Client Only
 | coreGuiType | `Enum.CoreGuiType` | ✔︎ |
 | enabled | boolean | ✔︎ |
 
-### GetCoreGuiEnabled <small>boolean</small> { #GetCoreGuiEnabled data-toc-label="GetCoreGuiEnabled" }
+### GetCoreGuiEnabled <small><boolean\></small> { #GetCoreGuiEnabled data-toc-label="GetCoreGuiEnabled" }
 Client Only
 { .flag .plain }
 
@@ -69,7 +69,7 @@ Client Only
 | :---: | :---: | :---: |
 | coreGuiType | `Enum.CoreGuiType` | ✔︎ |
 
-### LoadService <small>void</small> { #LoadService data-toc-label="LoadService" }
+### LoadService <small><void\></small> { #LoadService data-toc-label="LoadService" }
 Server Only
 { .flag .plain }
 

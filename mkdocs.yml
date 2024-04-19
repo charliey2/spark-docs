@@ -13,6 +13,7 @@ theme:
     - navigation.instant.progress
     - content.tooltips
     - content.code.copy
+    - content.code.annotate
 
 markdown_extensions:
   - admonition
@@ -31,6 +32,14 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - awesome-pages:
+      filename: .pages
+      collapse_single_pages: false
+      strict: false
+  - section-index
 
 extra_css:
   - stylesheets/extra.css

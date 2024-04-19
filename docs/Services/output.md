@@ -8,7 +8,7 @@ The `Output` service provides .... more text here....??
 
 ## Methods
 
-### printIf <small>void</small> { #printIf data-toc-label="printIf" }
+### printIf <small><void\></small> { #printIf data-toc-label="printIf" }
 
 Prints a message if the conditional is true.
 
@@ -35,7 +35,7 @@ Prints a message if the conditional is true.
     --> "1 + 1 = 2"
     ```
 
-### warnIf <small>void</small> { #warnIf data-toc-label="warnIf" }
+### warnIf <small><void\></small> { #warnIf data-toc-label="warnIf" }
 
 Warns (1) a message if the conditional is true.
 { .annotate }
@@ -65,7 +65,7 @@ Warns (1) a message if the conditional is true.
     --> "1 + 1 = 2"
     ```
 
-### errorIf <small>void</small> { #errorIf data-toc-label="errorIf" }
+### errorIf <small><void\></small> { #errorIf data-toc-label="errorIf" }
 
 Errors if the conditional is true.
 
