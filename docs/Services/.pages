@@ -1,6 +1,0 @@
-nav:
-  - index.md
-  - ClientGui: clientgui.md
-  - Output: output.md
-  - Source: source.md
-  - Utility

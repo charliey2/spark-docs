@@ -1,4 +1,4 @@
-[SourceIndex]: https://www.google.com
+[SourceIndex]: /docs/api/classes/SourceIndex.md
 
 ## Overview
 

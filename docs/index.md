@@ -1,17 +1,51 @@
-# Welcome to MkDocs
+## Accessing Core
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The `Core` is the most important part of the framework. It provides access to all services, runs scripts, contains modules, packages, and game assets.
 
-## Commands
+!!! tip
+    The `Core` will always be finished loading before scripts run. Both the `Source` folder and all services will exist and be ready for use immediately.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+```lua
+local irisCORE = shared
+```
 
-## Project layout
+exampletext
+{ .flag .deprecated }
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+exampletext
+{ .flag .server }
+
+exampletext
+{ .flag .client }
+
+***
+
+## Methods
+
+### GetService <small>Service</small> { #GetService data-toc-label="GetService" }
+
+Used to get a `Service` from the given `serviceName`.
+
+| Argument | Type | Required |
+| :---: | :---: | :---: |
+| serviceName | string | ✔︎ |
+
+```lua
+local Utility = irisCORE:GetService("Utility")
+```
+
+***
+
+## Properties
+
+### Source <small>Folder</small> { #Source data-toc-label="Source" }
+
+Reference to either the Server source directory if the script context is Server, or the Client source directory if the script context is Client.
+
+```lua
+-- Client Context Script
+local irisCORE = shared
+
+local sourceFolder: Folder = irisCORE.Source
+local clientScripts: { ModuleScript } = sourceFolder:WaitForChild("Scripts"):GetChildren()
+```

@@ -1,6 +1,4 @@
 nav:
   - index.md
   - Setup: setup.md
-  - API:
-    - Classes
-    - Services 
+  - API: api

@@ -1,7 +1,7 @@
-[Table]: ./table.md
-[Number]: ./number.md
-[Object]: ./object.md
-[RichText]: ./richtext.md
+[Table]: ./Table.md
+[Number]: ./Number.md
+[Object]: ./Object.md
+[RichText]: ./RichText.md
 
 # Utility
 
