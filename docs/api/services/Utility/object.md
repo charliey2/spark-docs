@@ -18,7 +18,7 @@ Meant to replace Roblox's built in `Instance.new` method, this contructor provid
 === "Standard Use"
 
     ```lua
-    local Object = ...
+    local Object = Utility.Object
 
     Object.Create("Part", {
         { "Name", "NewPart" },
@@ -40,7 +40,7 @@ Meant to replace Roblox's built in `Instance.new` method, this contructor provid
         === "Example 1"
 
             ``` lua
-            local Object = ...
+            local Object = Utility.Object
 
             Object.Create("Model", {
                 { "Name", "NewModel" },
@@ -75,7 +75,7 @@ Meant to replace Roblox's built in `Instance.new` method, this contructor provid
         === "Example 2"
 
             ```lua
-            local Object = ...
+            local Object = Utility.Object
 
             local bottomPart: Part = Object.Create("Part", {
                 { "Name", "BottomPart" },
@@ -136,7 +136,7 @@ Returns an array of `Instance` children that have the specific `ClassName`. It d
 | className | string | ✔︎ |
 
 ```lua
-local Object = ...
+local Object = Utility.Object
 
 local parts: { Part } = Object.GetChildrenOfClass(workspace, "Part")
 
@@ -155,7 +155,7 @@ Returns an array of `Instance` children that are of the specific `ClassName` or 
 | className | string | ✔︎ |
 
 ```lua
-local Object = ...
+local Object = Utility.Object
 
 local parts: { BasePart } = Object.GetChildrenWhichAre(workspace, "BasePart")
 
@@ -174,7 +174,7 @@ Removes all children of the parent that have the specific `ClassName`. It does n
 | className | string | ✔︎ |
 
 ```lua
-local Object = ...
+local Object = Utility.Object
 
 Object.ClearChildrenOfClass(workspace, "Part")
 ```
@@ -189,7 +189,7 @@ Removes all children of the parent that are of the specific `ClassName` or inher
 | className | string | ✔︎ |
 
 ```lua
-local Object = ...
+local Object = Utility.Object
 
 Object.ClearChildrenWhichAre(workspace, "BasePart")
 ```
@@ -206,7 +206,7 @@ Waits for a property of an object to change to a specific value. Returns the new
 | property | string | ✔︎ |
 
 ```lua
-local Object = ...
+local Object = Utility.Object
 
 local part: BasePart = workspace:WaitForChild("Part")
 local newName: string = Object.WaitForPropertyValueChange(part, "Name")

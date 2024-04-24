@@ -1,31 +1,18 @@
 [SourceIndex]: /docs/api/classes/SourceIndex.md
+# Source
 
 ## Overview
-
-The `Source` service provides easy access to both shared and context-locked (server/client) source files. This service can only get modules and packages and should not be used to get world, interface, or effect assets.
 
 ***
 
 ## Methods
 
-### GetContextSourceIndex <small><[SourceIndex]\></small> { #GetContextSourceIndex data-toc-label="GetContextSourceIndex" }
-
-Gets the source index for the current script context. Respects context-locked source files, eg. Server context scripts can only access server source files. Returns a [SourceIndex].
-
-```lua
-local Source = shared:GetService("Source")
-
-local ContextSourceIndex: SourceIndex = Source:GetContextSourceIndex()
-local MyCoolModule = ContextSourceIndex:GetPackage("MyCoolModule")
-```
-
 ### GetSharedSourceIndex <small><[SourceIndex]\></small> { #GetSharedSourceIndex data-toc-label="GetSharedSourceIndex" }
 
-Gets the shared source index. Shared source files are always accessible by both the client and the server. Returns a [SourceIndex].
+Returns the shared `SourceIndex`. This is a shared object that contains all the shared source files that are loaded by the game.
 
-```lua
-local Source = shared:GetService("Source")
+### GetContextSourceIndex <small><[SourceIndex]\></small> { #GetContextSourceIndex data-toc-label="GetContextSourceIndex" }
+Not Replicated
+{ .flag .plain }
 
-local SharedSourceIndex: SourceIndex = Source:GetSharedSourceIndex()
-local MyCoolPackage = SharedSourceIndex:GetPackage("MyCoolPackage")
-```
+Returns the context `SourceIndex`. This is an object that contains all the source files that are loaded by the game in the current run context.

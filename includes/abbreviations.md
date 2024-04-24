@@ -5,7 +5,7 @@
 
 *[Read Only]: This member can only be read from, attempting to write to it will error
 
-*[Experimental]: This member is experimental and may not work as expected and is subject to change
+*[Experimental]: This member is experimental, it may not work as expected and is subject to change
 *[Hidden]: This member is not intended for widespread use and may be removed in the future without notice
 *[Deprecated]: This member is deprecated and should not be used in future work
 

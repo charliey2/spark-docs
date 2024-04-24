@@ -17,7 +17,7 @@ Returns a deep copy of the provided table.
 === "Script"
 
     ```lua
-    local Table = ...
+    local Table = Utility.Table
 
     local myDictionary = {
         fruits = {
@@ -58,7 +58,7 @@ Returns the `number` size of the provided table. When using the recursive option
 | recursive | boolean |  | `false` |
 
 ```lua
-local Table = ...
+local Table = Utility.Table
 
 local myDictionary = {
     fruits = {
