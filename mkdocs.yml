@@ -1,5 +1,5 @@
 site_name: My Docs
-site_url: https://example.com
+site_url: https://developer.spark.iriscore.dev
 
 theme:
   name: material
