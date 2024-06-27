@@ -1,0 +1,5 @@
+nav:
+  - index.md
+  - Services: services
+  - Classes: classes
+  - Game API: game-api
