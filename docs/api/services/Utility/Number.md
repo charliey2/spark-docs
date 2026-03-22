@@ -1,4 +1,4 @@
-[CustomRange]: /docs/api/classes/CustomRange/
+[CustomRange]: /api/classes/CustomRange.md
 [NumberRange]: https://create.roblox.com/docs/en-us/reference/engine/datatypes/NumberRange
 # Number
 

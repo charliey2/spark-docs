@@ -1,4 +1,4 @@
-[SourceIndex]: /docs/api/classes/CustomRange/
+[SourceIndex]: /api/classes/SourceIndex.md
 # Source
 
 ## Overview

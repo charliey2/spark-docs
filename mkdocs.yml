@@ -1,6 +1,8 @@
 site_name: My Spark Docs
 site_url: https://charliey2.github.io/spark-docs/
 
+docs_dir: docs
+
 theme:
   name: material
   
@@ -47,3 +49,9 @@ extra_css:
 
 watch:
   - includes
+
+validation:
+  links:
+    absolute_links: relative_to_docs
+    anchors: warn
+    unrecognized_links: warn
