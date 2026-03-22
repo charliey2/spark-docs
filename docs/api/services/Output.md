@@ -8,6 +8,21 @@ The `Output` service provides .... more text here....??
 
 ## Methods
 
+### SetPrefix <small><void\></small> { #SetPrefix data-toc-label="SetPrefix" }
+
+All Output methods called by this script will prefix their messages with the provided `prefix`. Passing `nil` will remove the `prefix`.
+
+| Argument | Type | Required |
+| :---: | :---: | :---: |
+| prefix | string | |
+
+```lua
+local Output = shared:GetService("Output"); Output:SetPrefix("Script1")
+
+Output:printIf(1 + 1 == 2, "Math works!")
+--> [Script1] Math works!
+```
+
 ### printIf <small><void\></small> { #printIf data-toc-label="printIf" }
 
 Prints a message if the conditional is true.
@@ -22,7 +37,7 @@ Prints a message if the conditional is true.
     ```lua
     local Output = shared:GetService("Output")
 
-    Output.printIf(1 + 1 == 2, "Math works!")
+    Output:printIf(1 + 1 == 2, "Math works!")
     --> "Math works!"
     ```
 
@@ -31,7 +46,7 @@ Prints a message if the conditional is true.
     ```lua
     local Output = shared:GetService("Output")
 
-    Output.printIf(1 + 1 == 2, "1", "+", "1", "= 2")
+    Output:printIf(1 + 1 == 2, "1", "+", "1", "= 2")
     --> "1 + 1 = 2"
     ```
 
@@ -52,7 +67,7 @@ Warns (1) a message if the conditional is true.
     ```lua
     local Output = shared:GetService("Output")
 
-    Output.warnIf(1 + 1 == 2, "Math works!")
+    Output:warnIf(1 + 1 == 2, "Math works!")
     --> "Math works!"
     ```
 
@@ -61,7 +76,7 @@ Warns (1) a message if the conditional is true.
     ```lua
     local Output = shared:GetService("Output")
 
-    Output.warnIf(1 + 1 == 2, "1", "+", "1", "= 2")
+    Output:warnIf(1 + 1 == 2, "1", "+", "1", "= 2")
     --> "1 + 1 = 2"
     ```
 

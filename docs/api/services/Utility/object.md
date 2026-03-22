@@ -4,9 +4,9 @@
 
 ***
 
-## Methods
+## Constructors
 
-### Create <small><Instance\></small> { #Create data-toc-label="Create" }
+### create <small><Instance\></small> { #create data-toc-label="create" }
 
 Meant to replace Roblox's built in `Instance.new` method, this contructor provides a more robust way to create instances. The properties argument is an array that contains sub-arrays formatted as such: `{ "PropertyName", Value }`; however, there are some unique property flags that can be used to create large `Instance` trees with ease. Properties are applied in the order they are provided.
 
@@ -20,7 +20,7 @@ Meant to replace Roblox's built in `Instance.new` method, this contructor provid
     ```lua
     local Object = Utility.Object
 
-    Object.Create("Part", {
+    Object.create("Part", {
         { "Name", "NewPart" },
         { "Size", Vector3.new(1, 1, 1) },
         { "Position", Vector3.new(0, 15, 0) },
@@ -42,17 +42,17 @@ Meant to replace Roblox's built in `Instance.new` method, this contructor provid
             ``` lua
             local Object = Utility.Object
 
-            Object.Create("Model", {
+            Object.create("Model", {
                 { "Name", "NewModel" },
                 { "__Children", {
-                    Object.Create("Part", {
+                    Object.create("Part", {
                         { "Name", "BottomPart" },
                         { "Size", Vector3.new(1, 1, 1) },
                         { "Position", Vector3.new(0, 10, 0) },
                         { "BrickColor", BrickColor.new("Bright blue") },
                         { "Anchored", true }
                     }),
-                    Object.Create("Part", {
+                    Object.create("Part", {
                         { "Name", "TopPart" },
                         { "Size", Vector3.new(1, 1, 1) },
                         { "Position", Vector3.new(0, 15, 0) },
@@ -77,7 +77,7 @@ Meant to replace Roblox's built in `Instance.new` method, this contructor provid
             ```lua
             local Object = Utility.Object
 
-            local bottomPart: Part = Object.Create("Part", {
+            local bottomPart: Part = Object.create("Part", {
                 { "Name", "BottomPart" },
                 { "Size", Vector3.new(1, 1, 1) },
                 { "Position", Vector3.new(0, 10, 0) },
@@ -85,11 +85,11 @@ Meant to replace Roblox's built in `Instance.new` method, this contructor provid
                 { "Anchored", true }
             })
 
-            Object.Create("Model", {
+            Object.create("Model", {
                 { "Name", "NewModel" },
                 { "__Children", {
                     bottomPart,
-                    Object.Create("Part", {
+                    Object.create("Part", {
                         { "Name", "MiddlePart" },
                         { "Size", Vector3.new(1, 1, 1) },
                         { "Position", Vector3.new(0, 12.5, 0) },
@@ -126,6 +126,8 @@ Meant to replace Roblox's built in `Instance.new` method, this contructor provid
                     └── Part "TopPart"
             ```
 
+## Methods
+
 ### GetChildrenOfClass <small><array\></small> { #GetChildrenOfClass data-toc-label="GetChildrenOfClass" }
 
 Returns an array of `Instance` children that have the specific `ClassName`. It does not check for class inheritance. Use `GetChildrenWhichAre` to respect class inheritance.
@@ -138,7 +140,7 @@ Returns an array of `Instance` children that have the specific `ClassName`. It d
 ```lua
 local Object = Utility.Object
 
-local parts: { Part } = Object.GetChildrenOfClass(workspace, "Part")
+local parts: { Part } = Object:GetChildrenOfClass(workspace, "Part")
 
 for _, part: Part in parts do
     print(part.Name, "is a Part in workspace!")
@@ -157,7 +159,7 @@ Returns an array of `Instance` children that are of the specific `ClassName` or 
 ```lua
 local Object = Utility.Object
 
-local parts: { BasePart } = Object.GetChildrenWhichAre(workspace, "BasePart")
+local parts: { BasePart } = Object:GetChildrenWhichAre(workspace, "BasePart")
 
 for _, part: BasePart in parts do
     print(part.Name, "is a BasePart in workspace!")
@@ -176,7 +178,7 @@ Removes all children of the parent that have the specific `ClassName`. It does n
 ```lua
 local Object = Utility.Object
 
-Object.ClearChildrenOfClass(workspace, "Part")
+Object:ClearChildrenOfClass(workspace, "Part")
 ```
 
 ### ClearChildrenWhichAre <small><void\></small> { #ClearChildrenWhichAre data-toc-label="ClearChildrenWhichAre" }
@@ -191,7 +193,7 @@ Removes all children of the parent that are of the specific `ClassName` or inher
 ```lua
 local Object = Utility.Object
 
-Object.ClearChildrenWhichAre(workspace, "BasePart")
+Object:ClearChildrenWhichAre(workspace, "BasePart")
 ```
 
 ### WaitForPropertyValueChange <small><any\></small> { #WaitForPropertyValueChange data-toc-label="WaitForPropertyValueChange" }
@@ -209,7 +211,7 @@ Waits for a property of an object to change to a specific value. Returns the new
 local Object = Utility.Object
 
 local part: BasePart = workspace:WaitForChild("Part")
-local newName: string = Object.WaitForPropertyValueChange(part, "Name")
+local newName: string = Object:WaitForPropertyValueChange(part, "Name")
 
 print(newName)
 ```

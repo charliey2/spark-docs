@@ -29,7 +29,7 @@ Returns a deep copy of the provided table.
         inSeason = true
     }
 
-    local deepCopy = Table.DeepCopy(myDictionary)
+    local deepCopy = Table:DeepCopy(myDictionary)
 
     print(deepCopy)
     ```
@@ -70,7 +70,7 @@ local myDictionary = {
     inSeason = true
 }
 
-local size = Table.SizeOf(myDictionary, true)
+local size = Table:SizeOf(myDictionary, true)
 
 print(size) --> 7 (2 without recursive option)
 ```

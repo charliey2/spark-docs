@@ -34,20 +34,20 @@
     background-color: rgba(255, 0, 0, 0.2);
 }
 
-.flag.client {
+.flag.server {
     color: rgb(33, 167, 46) !important;
     background-color: rgba(33, 167, 46, 0.115);
 }
 
-.flag.client:hover {
+.flag.server:hover {
     background-color: rgba(33, 167, 46, 0.2);
 }
 
-.flag.server {
+.flag.client {
     color: rgb(33, 120, 167) !important;
     background-color: rgba(33, 120, 167, 0.115);
 }
 
-.flag.server:hover {
+.flag.client:hover {
     background-color: rgba(33, 120, 167, 0.2);
 }

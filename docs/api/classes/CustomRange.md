@@ -2,6 +2,8 @@
 
 ## Overview
 
+A `CustomRange` is almost identical to the Roblox [NumberRange](https://create.roblox.com/docs/en-us/reference/engine/datatypes/NumberRange) except it provides two extra functions.
+
 ***
 
 ## Properties
@@ -24,12 +26,12 @@ References the maximum value of the range.
 
 ### InRange <small><boolean\></small> { #InRange data-toc-label="InRange" }
 
-If inclusive, checks if `number` `x >= Min` and `x <= Max`. Otherwise, checks if `number` `x > Min` and `x < Max`.
+If inclusive, checks if `x >= Min` and `x <= Max`. Otherwise, checks if `x > Min` and `x < Max`.
 
 | Argument | Type | Required | Default |
 | :---: | :---: | :---: |  |
 | x | number | ✔︎ |  |
-| inclusive | boolean |  | `false` |
+| inclusive | boolean |  | `true` |
 
 ### Values <small><number, number\></small> { #Values data-toc-label="Values" }
 

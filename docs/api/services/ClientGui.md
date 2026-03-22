@@ -10,7 +10,7 @@ The `ClientGui` service provides client side access to `GuiBase` objects. It als
 
 ### GetInterface <small><GuiBase?\></small> { #GetInterface data-toc-label="GetInterface" }
 Client Only
-{ .flag .plain }
+{ .flag .client }
 
 Can Yield
 { .flag .plain }
@@ -54,7 +54,7 @@ Prints a message if the conditional is true. If `shouldYield` is `true`, the scr
 
 ### SetCoreGuiEnabled <small><void\></small> { #SetCoreGuiEnabled data-toc-label="SetCoreGuiEnabled" }
 Client Only
-{ .flag .plain }
+{ .flag .client }
 
 | Argument | Type | Required |
 | :---: | :---: | :---: |
@@ -63,7 +63,7 @@ Client Only
 
 ### GetCoreGuiEnabled <small><boolean\></small> { #GetCoreGuiEnabled data-toc-label="GetCoreGuiEnabled" }
 Client Only
-{ .flag .plain }
+{ .flag .client }
 
 | Argument | Type | Required |
 | :---: | :---: | :---: |
@@ -71,6 +71,6 @@ Client Only
 
 ### LoadService <small><void\></small> { #LoadService data-toc-label="LoadService" }
 Server Only
-{ .flag .plain }
+{ .flag .server }
 
 Must be called on the server to permit GUIs to load on clients.

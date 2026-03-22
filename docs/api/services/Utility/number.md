@@ -1,4 +1,4 @@
-[CustomRange]: /docs/api/classes/CustomRange.md
+[CustomRange]: /spark-docs/api/classes/CustomRange/
 [NumberRange]: https://create.roblox.com/docs/en-us/reference/engine/datatypes/NumberRange
 # Number
 
@@ -6,9 +6,9 @@
 
 ***
 
-## Methods
+## Constructors
 
-### Range <small><[CustomRange]\></small> { #Range data-toc-label="Range" }
+### range <small><[CustomRange]\></small> { #range data-toc-label="Range" }
 
 Creates a [CustomRange] object with the provided minimum and maximum values. If no maximum value is provided, the maximum value will be set to the minimum value.
 
@@ -17,7 +17,7 @@ Creates a [CustomRange] object with the provided minimum and maximum values. If 
 | min | number | ✔︎ |
 | max | number |  |
 
-### SimpleRange <small><[NumberRange]\></small> { #SimpleRange data-toc-label="SimpleRange" }
+### simpleRange <small><[NumberRange]\></small> { #simpleRange data-toc-label="SimpleRange" }
 
 Creates a Roblox [NumberRange] object with the provided minimum and maximum values. If no maximum value is provided, the maximum value will be set to the minimum value.
 
