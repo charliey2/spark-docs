@@ -1,4 +1,4 @@
-[SourceIndex]: ../classes/SourceIndex.md
+[SourceIndex]: /spark-docs/api/classes/SourceIndex/
 # Source
 
 ## Overview
