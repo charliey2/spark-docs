@@ -1,0 +1,53 @@
+.flag {
+    line-height: .8rem;
+    padding: 5px;
+    margin-left: 7px !important;
+    margin: 0 !important;
+    background-clip: padding-box;
+    display: inline-block;
+    border-radius: 6px;
+    transition: background-color 0.15s;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.flag.plain {
+    color: #a4a4a4;
+    background-color: rgba(116, 116, 116, 0.115);
+}
+
+.flag.plain:hover {
+    background-color: rgba(116, 116, 116, 0.2);
+}
+
+.flag.deprecated {
+    color: rgb(167, 33, 33) !important;
+    background-color: rgba(255, 0, 0, 0.115);
+}
+
+.flag.deprecated:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.flag.server {
+    color: rgb(33, 167, 46) !important;
+    background-color: rgba(33, 167, 46, 0.115);
+}
+
+.flag.server:hover {
+    background-color: rgba(33, 167, 46, 0.2);
+}
+
+.flag.client {
+    color: rgb(33, 120, 167) !important;
+    background-color: rgba(33, 120, 167, 0.115);
+}
+
+.flag.client:hover {
+    background-color: rgba(33, 120, 167, 0.2);
+}
