@@ -1,4 +1,4 @@
-[CustomRange]: /spark-docs/api/classes/CustomRange/
+[CustomRange]: /docs/api/classes/CustomRange/
 [NumberRange]: https://create.roblox.com/docs/en-us/reference/engine/datatypes/NumberRange
 # Number
 

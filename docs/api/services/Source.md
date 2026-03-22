@@ -1,4 +1,4 @@
-[SourceIndex]: /spark-docs/api/classes/SourceIndex/
+[SourceIndex]: /docs/api/classes/CustomRange/
 # Source
 
 ## Overview
